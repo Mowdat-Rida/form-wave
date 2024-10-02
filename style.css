@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: steelblue;
+  background-color: rgba(119, 119, 119, 0.829);
   color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
@@ -14,45 +14,46 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
+  transform: translateX(-30%); 
+  transition: transform 0.5s ease;
+ 
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.4);
+  
+  background-color: rgb(0, 0, 0);
   padding: 20px 40px;
   border-radius: 5px;
-}
-
+  box-shadow: 0px 10px 80px 0px  #2824fad7 ;
+  
+} 
 .container h1 {
   text-align: center;
   margin-bottom: 30px;
 }
-
 .container a {
   text-decoration: none;
   color: lightblue;
+  
 }
-
 .btn {
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  background: lightblue;
+  background: #2824fa ;
   padding: 15px;
   font-family: inherit;
   font-size: 16px;
   border: 0;
   border-radius: 5px;
+  color: white;
 }
-
 .btn:focus {
   outline: 0;
 }
-
 .btn:active {
-  transform: scale(0.98);
+  transform: scale(0.60);
 }
-
 .text {
   margin-top: 30px;
 }
@@ -62,11 +63,10 @@ body {
   margin: 20px 0 40px;
   width: 300px;
 }
-
 .form-control input {
   background-color: transparent;
   border: 0;
-  border-bottom: 2px #fff solid;
+  border-bottom: 2px #0400ff solid;
   display: block;
   width: 100%;
   padding: 15px 0;
@@ -75,20 +75,17 @@ body {
   position: relative;
   z-index: 100;
 }
-
 .form-control input:focus,
 .form-control input:valid {
   outline: 0;
-  border-bottom-color: lightblue;
+  border-bottom-color: rgb(174, 173, 230);
 }
-
 .form-control label {
   position: absolute;
   top: 15px;
   left: 0;
   pointer-events: none;
 }
-
 .form-control label span {
   display: inline-block;
   font-size: 18px;
@@ -97,7 +94,8 @@ body {
 }
 
 .form-control input:focus + label span,
-.form-control input:valid + label span {
-  color: lightblue;
+.form-control input:valid + label span { 
+  color: rgb(255, 0, 234);
   transform: translateY(-30px);
 }
+/* :valid pseudo-class applies after the user has entered valid data in the input field */
